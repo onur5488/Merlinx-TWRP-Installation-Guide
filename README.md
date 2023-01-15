@@ -22,7 +22,7 @@ https://xiaomitools.com/download/minimal-adb-ve-fastboot-v1-4-3/
 İlk Önce minimal adb ve fastboot aracını indirip Kuruyoruz
 Sonra Redmi_Note_9_Merlin_Android_11_TWRP adlı dosyayı indiriyoruz (twrp by wzsx150 tarafından yapılmıştır. )
 
-https://github.com/onur5488/MIUI-13-Installation-Guide
+https://github.com/onur5488/Merlinx-TWRP-Installation-Guide
 
 Telefonun Ayarlar/Telefon Hakkında/Tüm Özellikler/Mıuı sürümüne 5 kez tıklayın
 Sonra Ayarlar / Ek Ayarlar / Seçenekler / USB Hata ayıklamayı açınız
