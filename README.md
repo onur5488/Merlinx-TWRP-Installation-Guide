@@ -1,26 +1,64 @@
 # Merlinx-TWRP-Installation-Guide
 
-# [Redmi 10x 4G/Redmi Note 9][MERLINX][Android 12]MIUI 13 Kurulum Rehberi
-
-1-) Redmi note 9 cihazına MIUI 13 kurmak için öncelikle miflash tool adlı programı bilgisayarımıza indiriyoruz ve kuruyoruz.
-
-https://xiaomitools.com/mi-flash-tool/
-                                             
-                                             
-2-) Redmi note 9 için MIUI 13 global sürüm Fastboot dosyasını indiriyoruz.                                            
-
-https://forum.turkdevs.com/yonlendirme?to=aHR0cHM6Ly94aWFvbWlmaXJtd2FyZXVwZGF0ZXIuY29tL21pdWkvbWVybGluLw==
+# [Redmi 10x 4G/Redmi Note 9][MERLIN]TWRP Kurulum Rehberi
 
 
-3-) İndirdiğimiz merlin_global_images_V13.0.2.0.SJOMIXM_20221013.0000.00_12.0_global.tgz isimli dosyayı klasöre çıkarıyoruz. ve aşağıdaki linkteki dosyayı indiriyoruz.
+Buradaki anlatım V12.0.1.0.RJOMIXM(Android 11) Sürümü baz alınarak anlatılmıştır.
 
-https://disk.yandex.com.tr/d/GrkDf0q6CA9AYw
+https://forum.xda-developers.com/t/twrp-pbrp-collection-of-twrp-pbrp-for-merlin-redmi-note-9-redmi-10x-4g.4227751/
 
-4-)İndirdiğimiz dosyayı images adlı klasörün içine atıyoruz ve gelen ekranda hedefteki dosyayı değiştire tıklıyoruz.
+Farklı bir Miui sürümünde iseniz
+Yukarıdaki Linkteki verilen sürümlere uygun twrp dosyalarını kurmanız gerekmektedir.
 
-![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/lc2dcx4.PNG)
+NOT: Bazı cihazlarda twrp yüklenmesi sonucu dokunmatik çalışmaması ve siyah ekran sorunları oluşmaktadır. Bu sorunları göze alarak twrp kurmayı deneyiniz.
+Yapacağınız işlemlerde bütün sorumluluk size aittir. Oluşabilecek sorunlardan şahsım ve "TurkDevs.com" sorumlu tutulamaz.
+Lütfen Başka Forumlarda Veya Platformlarda İznim Olmadan Paylaşmayınız.
 
-5-) Miflash tool aracını açıyoruz. Telefonumuzu fastboot moda alarak (güç tuşu + ses kısma) pc ye bağlıyoruz.Mi flash tool proramının altında bulunan clean all seçeneğini işaretliyoruz ve flash a tıklıyoruz.
+Kurulum için Mi kilidi açık olması gerekmektedir.
 
-![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/tc55xwc.PNG)
 
+https://xiaomitools.com/download/minimal-adb-ve-fastboot-v1-4-3/
+
+İlk Önce minimal adb ve fastboot aracını indirip Kuruyoruz
+Sonra Redmi_Note_9_Merlin_Android_11_TWRP adlı dosyayı indiriyoruz (twrp by wzsx150 tarafından yapılmıştır. )
+
+https://disk.yandex.com.tr/d/dy3i417yfFrtlg
+
+Telefonun Ayarlar/Telefon Hakkında/Tüm Özellikler/Mıuı sürümüne 5 kez tıklayın
+Sonra Ayarlar / Ek Ayarlar / Seçenekler / USB Hata ayıklamayı açınız
+Telefonu kapatıp Ses Kısma + Güç Tuşuna basılı tutun Fastboot mod açılsın
+İndirdiğiniz Redmi_Note_9_Merlin_Android_11_TWRP zipin içindekileri Mınımal adb ve fastboot aracının olduğu klasöre atın
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/l3o60nd.PNG)
+
+Mınımal adb ve fastboot aracını yönetici olarak çalıştırıp açınız
+
+Gelen komut ekranına sırayla
+
+```
+fastboot flash recovery 3.4.2b-0109.img
+
+```
+yazıyoruz enter a basıyoruz.
+
+```
+fastboot flash vbmeta vbmeta.img 
+
+```
+yazıyoruz enter a basıyoruz.
+
+```
+fastboot flash misc misc.bin 
+
+```
+yazıyoruz enter a basıyoruz
+
+```
+fastboot boot 3.4.2b-0109.img 
+
+```
+
+
+yazıyoruz enter a basıyoruz 5sn-10sn arası bekliyoruz açılırken ses açmaya basıp recovery ekranına geçmiş oluyoruz.
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/iu8wpfu.png)
